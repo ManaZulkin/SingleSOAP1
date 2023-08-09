@@ -9,10 +9,10 @@ import java.util.Map;
 public class Translate implements ITranslate{
     @Override
     public String translate(String word) {
-        String translate;
+
         Map<String, String> dictionary = getDictionary();
-        translate = dictionary.get(word);
-        return translate;
+
+        return dictionary.get(word);
     }
 
     public static Map<String, String> getDictionary(){
